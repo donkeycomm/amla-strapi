@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paginas",
+  "info": {
+    "singularName": "pagina",
+    "pluralName": "paginas",
+    "displayName": "Pagina's"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Naam": {
+      "type": "string"
+    },
+    "SEO_titel": {
+      "type": "string"
+    },
+    "SEO_beschrijving": {
+      "type": "string"
+    },
+    "afbeeldingens": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::afbeelding.afbeelding",
+      "mappedBy": "pagina"
+    },
+    "tekstens": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::teksten.teksten",
+      "mappedBy": "pagina"
+    }
+  }
+}

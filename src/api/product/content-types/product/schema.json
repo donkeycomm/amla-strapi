@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "producten",
+  "info": {
+    "singularName": "product",
+    "pluralName": "producten",
+    "displayName": "Producten"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titel": {
+      "type": "string"
+    },
+    "Beschrijving": {
+      "type": "richtext"
+    },
+    "Voorraad": {
+      "type": "integer"
+    },
+    "Prijs": {
+      "type": "decimal"
+    },
+    "Afbeeldingen": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "SKU": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Titel"
+    },
+    "Featured": {
+      "type": "boolean"
+    },
+    "Voorraad_weergeven": {
+      "type": "boolean"
+    },
+    "BTW": {
+      "type": "integer"
+    }
+  }
+}

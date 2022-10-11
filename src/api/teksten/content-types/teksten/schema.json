@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tekstens",
+  "info": {
+    "singularName": "teksten",
+    "pluralName": "tekstens",
+    "displayName": "Teksten"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titel": {
+      "type": "string"
+    },
+    "Inhoud": {
+      "type": "richtext"
+    },
+    "pagina": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::pagina.pagina",
+      "inversedBy": "tekstens"
+    }
+  }
+}

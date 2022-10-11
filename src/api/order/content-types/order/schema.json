@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Orders"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Factuur_voornaam": {
+      "type": "string"
+    },
+    "Factuur_achternaam": {
+      "type": "string"
+    },
+    "Factuur_email": {
+      "type": "string"
+    },
+    "Factuur_telefoon": {
+      "type": "string"
+    },
+    "Factuur_straat": {
+      "type": "string"
+    },
+    "Factuur_huisnummer": {
+      "type": "string"
+    },
+    "Factuur_woonplaats": {
+      "type": "string"
+    },
+    "Factuur_bedrijf": {
+      "type": "string"
+    },
+    "Factuur_BTW_nummer": {
+      "type": "string"
+    },
+    "Bezorging_voornaam": {
+      "type": "string"
+    },
+    "Bezorging_achternaam": {
+      "type": "string"
+    },
+    "Bezorging_straat": {
+      "type": "string"
+    },
+    "Bezorging_huisnummer": {
+      "type": "string"
+    },
+    "Bezorging_woonplaats": {
+      "type": "string"
+    },
+    "Bezorging_bedrijf": {
+      "type": "string"
+    },
+    "Order_nummer": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "string"
+    },
+    "Totaal_bedrag": {
+      "type": "decimal"
+    },
+    "Bezorg_kost": {
+      "type": "decimal"
+    },
+    "Order_details": {
+      "type": "json"
+    },
+    "Factuur_link": {
+      "type": "string"
+    },
+    "Factuur_land": {
+      "type": "string"
+    },
+    "Bezorging_land": {
+      "type": "string"
+    },
+    "Bezorging_postcode": {
+      "type": "string"
+    },
+    "Factuur_postcode": {
+      "type": "string"
+    }
+  }
+}
