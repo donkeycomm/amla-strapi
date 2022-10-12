@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "verzendkosten",
+  "info": {
+    "singularName": "verzendkost",
+    "pluralName": "verzendkosten",
+    "displayName": "Verzendkosten"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Postcode": {
+      "type": "string"
+    },
+    "Tarief": {
+      "type": "decimal"
+    }
+  }
+}
